@@ -51,17 +51,17 @@ export class App {
   protected readonly testimonials: Testimonial[] = [
     {
       name: 'Rafael M.',
-      detail: 'Recife, engenheiro',
+      detail: 'Engenheiro',
       text: 'Achava que tinha que ficar horas na academia. O Thiago montou um treino enxuto que funciona de verdade. Ganhei braço e peitoral sem virar escravo da academia.',
     },
     {
       name: 'Camila S.',
-      detail: 'Boa Viagem, advogada',
+      detail: 'Advogada',
       text: 'Voltei a treinar depois de muito tempo parada com medo de machucar o joelho de novo. Ele adaptou tudo e mesmo assim consegui definir bastante.',
     },
     {
       name: 'João Pedro',
-      detail: 'Estudante, Zona Norte',
+      detail: 'Estudante',
       text: 'Responde no zap igual amigo, não some depois que você paga. Travei no stiff e ele mandou vídeo na hora explicando. Isso muda o jogo quando você treina sozinho.',
     },
     {
