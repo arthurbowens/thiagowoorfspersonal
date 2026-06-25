@@ -10,14 +10,21 @@ describe('App', () => {
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(App);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(fixture.componentInstance).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should render trainer name', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, thiagowoorfspersonal');
+    expect(compiled.querySelector('.lp-name')?.textContent).toContain('Thiago Woorfs');
+  });
+
+  it('should render result slides and testimonials', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelectorAll('.lp-carousel-slide').length).toBe(3);
+    expect(compiled.querySelectorAll('.lp-testimonial-card').length).toBe(5);
   });
 });
