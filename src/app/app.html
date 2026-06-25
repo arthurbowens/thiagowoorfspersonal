@@ -33,13 +33,13 @@
         <div class="lp-hero-glow"></div>
         <img
           src="foto1.jpeg"
-          alt="Thiago Woorfs — Personal Trainer"
+          alt="Thiago Woorfs, Personal Trainer"
           class="lp-hero-img"
           width="800"
           height="1000"
         />
         <div class="lp-hero-overlay">
-          <span class="lp-hero-tag">Personal Trainer · Recife</span>
+          <span class="lp-hero-tag">Personal Trainer, Recife</span>
           <span class="lp-hero-title">Seu corpo<br />merece mais.</span>
         </div>
       </div>
@@ -47,7 +47,7 @@
       <div class="lp-hero-content">
         <span class="lp-badge">
           <app-icon name="award" size="12" />
-          TREINADOR · 72188746
+          TREINADOR 72188746
         </span>
 
         <h1 class="lp-name">Thiago Woorfs.</h1>
@@ -61,12 +61,6 @@
           Você <strong>ganha massa muscular</strong>, <strong>define o corpo</strong>
           e para de rodar em círculos na academia.
         </p>
-
-        <ul class="lp-hero-stats">
-          <li><strong>+120</strong> alunos acompanhados</li>
-          <li><strong>100%</strong> online + presencial</li>
-          <li><strong>Resposta</strong> no mesmo dia</li>
-        </ul>
 
         <a [href]="whatsappUrl" target="_blank" rel="noopener noreferrer" class="lp-cta">
           <app-icon name="whatsapp" size="18" />
@@ -108,7 +102,7 @@
         <div>
           <p class="lp-section-label">Prova real</p>
           <h2 class="lp-section-title">Resultados de quem confiou no processo</h2>
-          <p class="lp-results-sub">Transformações reais — sem filtro, sem promessa vazia.</p>
+          <p class="lp-results-sub">Transformações reais. Sem filtro, sem promessa vazia.</p>
         </div>
         <div class="lp-carousel-nav lp-carousel-nav--desktop">
           <button type="button" class="lp-carousel-btn" (click)="scrollCarousel(-1)" aria-label="Anterior">
@@ -127,12 +121,11 @@
           <div class="lp-carousel-frame">
             <img
               [src]="slide.image"
-              [alt]="'Resultado ' + (i + 1) + ' — aluno Thiago Woorfs'"
+              [alt]="'Resultado ' + (i + 1) + ' de aluno do Thiago Woorfs'"
               class="lp-carousel-img"
               loading="lazy"
             />
           </div>
-          <p class="lp-carousel-caption">{{ slide.caption }}</p>
         </article>
       }
     </div>
@@ -168,10 +161,9 @@
             <p class="lp-testimonial-text">"{{ t.text }}"</p>
             <footer class="lp-testimonial-footer">
               <div>
-                <strong class="lp-testimonial-name">{{ t.name }}, {{ t.age }}</strong>
+                <strong class="lp-testimonial-name">{{ t.name }}</strong>
                 <span class="lp-testimonial-detail">{{ t.detail }}</span>
               </div>
-              <span class="lp-testimonial-time">{{ t.months }} meses</span>
             </footer>
           </article>
         }
@@ -215,16 +207,9 @@
         </span>
         <span class="lp-logo-last">Woorfs</span>
       </div>
-      <p>Personal Trainer · Recife/PE</p>
+      <p>Personal Trainer, Recife/PE</p>
       <p>CREF 72188746</p>
     </div>
   </footer>
-
-  <div class="lp-sticky-cta">
-    <a [href]="whatsappUrl" target="_blank" rel="noopener noreferrer" class="lp-sticky-btn">
-      <app-icon name="whatsapp" size="18" />
-      Chamar no WhatsApp
-    </a>
-  </div>
 
 </div>

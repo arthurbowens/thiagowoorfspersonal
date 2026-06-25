@@ -9,15 +9,12 @@ interface Benefit {
 
 interface ResultSlide {
   image: string;
-  caption: string;
 }
 
 interface Testimonial {
   name: string;
-  age: number;
   detail: string;
   text: string;
-  months: number;
 }
 
 @Component({
@@ -43,51 +40,39 @@ export class App {
     {
       icon: 'message',
       title: 'Acompanhamento de verdade',
-      text: 'Dúvida no treino? Manda no WhatsApp. Respondo e ajusto — não te deixo no vácuo.',
+      text: 'Dúvida no treino? Manda no WhatsApp. Respondo e ajusto. Não te deixo no vácuo.',
     },
   ];
 
-  protected readonly results: ResultSlide[] = [
-    { image: 'resultado1.jpeg', caption: 'Definição visível com treino consistente e ajustes semanais.' },
-    { image: 'resultado2.jpeg', caption: 'Cintura marcada e evolução real em poucos meses de acompanhamento.' },
-    { image: 'resultado3.jpeg', caption: 'Ganho de massa e definição — processo, não milagre de 30 dias.' },
-  ];
+  protected readonly results: ResultSlide[] = Array.from({ length: 8 }, (_, i) => ({
+    image: `resultado${i + 1}.jpeg`,
+  }));
 
   protected readonly testimonials: Testimonial[] = [
     {
       name: 'Rafael M.',
-      age: 27,
-      detail: 'Recife · Engenheiro',
-      months: 4,
-      text: 'Achava que tinha que passar 2h na academia. O Thiago montou treino de 50 min que funciona de verdade. Ganhei braço e peitoral sem virar escravo da academia.',
+      detail: 'Recife, engenheiro',
+      text: 'Achava que tinha que ficar horas na academia. O Thiago montou um treino enxuto que funciona de verdade. Ganhei braço e peitoral sem virar escravo da academia.',
     },
     {
       name: 'Camila S.',
-      age: 32,
-      detail: 'Boa Viagem · Advogada',
-      months: 3,
-      text: 'Voltei a treinar depois de 2 anos parada com medo de machucar o joelho de novo. Ele adaptou tudo e mesmo assim consegui definir bastante. Não é aquele personal que ignora limitação.',
+      detail: 'Boa Viagem, advogada',
+      text: 'Voltei a treinar depois de muito tempo parada com medo de machucar o joelho de novo. Ele adaptou tudo e mesmo assim consegui definir bastante.',
     },
     {
       name: 'João Pedro',
-      age: 24,
-      detail: 'Estudante · Zona Norte',
-      months: 5,
+      detail: 'Estudante, Zona Norte',
       text: 'Responde no zap igual amigo, não some depois que você paga. Travei no stiff e ele mandou vídeo na hora explicando. Isso muda o jogo quando você treina sozinho.',
     },
     {
       name: 'Patricia L.',
-      age: 38,
-      detail: 'Enfermeira · escala 12x36',
-      months: 6,
-      text: 'Nunca tinha rotina fixa por causa do plantão. Ele montou treino pra quando só consigo ir 3x na semana. Pela primeira vez tô vendo costas e glúteo responder.',
+      detail: 'Enfermeira, escala de plantão',
+      text: 'Nunca tinha rotina fixa por causa do trabalho. Ele montou treino flexível e pela primeira vez tô vendo costas e glúteo responder.',
     },
     {
       name: 'Lucas A.',
-      age: 29,
-      detail: 'TI · Home office',
-      months: 2,
-      text: 'Entrei querendo só emagrecer. Em 8 semanas já tava focando em hipertrofia porque o corpo mudou demais. O plano evolui junto, não fica engessado.',
+      detail: 'TI, home office',
+      text: 'Entrei querendo emagrecer e logo já tava focando em hipertrofia porque o corpo mudou demais. O plano evolui junto, não fica engessado.',
     },
   ];
 

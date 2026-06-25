@@ -17,7 +17,6 @@
   color: #fff;
   position: relative;
   overflow-x: clip;
-  padding-bottom: 5.5rem;
 }
 
 .lp-container {
@@ -244,30 +243,6 @@
 .lp-body strong {
   color: #fff;
   font-weight: 600;
-}
-
-.lp-hero-stats {
-  list-style: none;
-  margin: 0.5rem 0 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-}
-
-.lp-hero-stats li {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.4rem 0.85rem;
-}
-
-.lp-hero-stats strong {
-  color: var(--gold);
-  font-weight: 700;
 }
 
 /* ── Sections ── */
@@ -534,17 +509,6 @@
   margin-top: 0.15rem;
 }
 
-.lp-testimonial-time {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--gold);
-  white-space: nowrap;
-  background: rgba(212, 175, 55, 0.1);
-  padding: 0.3rem 0.65rem;
-  border-radius: 999px;
-}
-
 /* ── Closing ── */
 .lp-closing {
   padding: 2rem 0 3rem;
@@ -664,43 +628,6 @@
   letter-spacing: 0.04em;
 }
 
-/* ── Sticky mobile CTA ── */
-.lp-sticky-cta {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0.75rem 1.25rem 1.25rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.96) 65%, transparent);
-  z-index: 100;
-}
-
-.lp-sticky-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 0.95rem 1.25rem;
-  background: var(--green);
-  color: #000;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 999px;
-  box-shadow: 0 -4px 32px rgba(0, 230, 118, 0.22);
-  transition: background 0.2s ease;
-}
-
-.lp-sticky-btn:hover {
-  background: var(--green-hover);
-}
-
 /* ── Tablet ── */
 @media (min-width: 640px) {
   .lp-header-cref {
@@ -728,10 +655,6 @@
 
 /* ── Desktop ── */
 @media (min-width: 900px) {
-  .lp {
-    padding-bottom: 0;
-  }
-
   .lp-container {
     padding-inline: 2rem;
   }
@@ -797,10 +720,6 @@
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
-  }
-
-  .lp-sticky-cta {
-    display: none;
   }
 }
 

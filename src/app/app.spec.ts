@@ -24,7 +24,7 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelectorAll('.lp-carousel-slide').length).toBe(3);
+    expect(compiled.querySelectorAll('.lp-carousel-slide').length).toBe(8);
     expect(compiled.querySelectorAll('.lp-testimonial-card').length).toBe(5);
   });
 });
