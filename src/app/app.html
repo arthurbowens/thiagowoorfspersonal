@@ -71,6 +71,73 @@
     </div>
   </section>
 
+  <!-- About -->
+  <section class="lp-about">
+    <div class="lp-container">
+      <div class="lp-section-head">
+        <p class="lp-section-label">Quem sou eu</p>
+        <h2 class="lp-section-title">Treinador e atleta Men's Physique</h2>
+      </div>
+
+      <div class="lp-about-grid">
+        <div class="lp-about-col">
+          <article class="lp-about-card">
+            <h3 class="lp-about-role">Treinador</h3>
+            <p class="lp-about-sub">Formação profissional</p>
+            <p class="lp-about-text">
+              Treinador formado em Musculação e Fisiculturismo.
+            </p>
+          </article>
+
+          <article class="lp-about-card">
+            <h3 class="lp-about-role">Atleta Men's Physique</h3>
+            <p class="lp-about-sub">Principais competências desenvolvidas</p>
+            <ul class="lp-about-skills">
+              @for (skill of competencies; track skill) {
+                <li>{{ skill }}</li>
+              }
+            </ul>
+          </article>
+
+          <article class="lp-about-card lp-about-card--highlight">
+            <p class="lp-about-sub">Experiência prática</p>
+            <p class="lp-about-exp">
+              Mais de <strong>15 anos</strong> de vivência contínua em academia de
+              <strong>Musculação</strong>.
+            </p>
+          </article>
+        </div>
+
+        <div class="lp-about-col lp-about-story">
+          <p class="lp-about-quote">
+            Foram mais de 15 anos dentro da academia, vivendo cada treino, cada erro e cada evolução.
+          </p>
+          <p class="lp-about-text">
+            Estudei, pratiquei e transformei o conhecimento em resultado. Porque técnica sem paixão
+            é só teoria.
+          </p>
+          <p class="lp-about-text">
+            Hoje, como treinador e atleta, meu propósito é inspirar pessoas a descobrirem sua
+            melhor versão.
+          </p>
+          <p class="lp-about-text">
+            A força não vem só dos músculos, vem da constância, da disciplina e da fé em si mesmo.
+          </p>
+          <p class="lp-about-text">
+            Se você acredita no processo, o resultado é inevitável.
+          </p>
+          <p class="lp-about-closing">Transforme dedicação em resultados!</p>
+
+          <a [href]="whatsappUrl" target="_blank" rel="noopener noreferrer" class="lp-cta">
+            <app-icon name="whatsapp" size="18" />
+            Quero treinar com o Thiago
+            <app-icon name="arrow-right" size="18" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Benefits -->
   <section class="lp-benefits">
     <div class="lp-container">

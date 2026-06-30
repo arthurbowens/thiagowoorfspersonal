@@ -337,6 +337,133 @@
   margin: 0;
 }
 
+/* ── About ── */
+.lp-about {
+  padding: 3rem 0;
+  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, #000 0%, #060606 100%);
+}
+
+.lp-about-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.lp-about-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lp-about-card {
+  padding: 1.35rem 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.lp-about-card--highlight {
+  border-color: rgba(212, 175, 55, 0.25);
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.lp-about-role {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 0.75rem;
+}
+
+.lp-about-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 0.5rem;
+}
+
+.lp-about-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.lp-about-skills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.lp-about-skills li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.45;
+}
+
+.lp-about-skills li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.lp-about-exp {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #fff;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.lp-about-exp strong {
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.lp-about-story {
+  padding: 0.25rem 0;
+}
+
+.lp-about-quote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.55;
+  margin: 0 0 1rem;
+}
+
+.lp-about-story .lp-about-text + .lp-about-text {
+  margin-top: 0.85rem;
+}
+
+.lp-about-closing {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--gold);
+  margin: 1.25rem 0 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 /* ── Results ── */
 .lp-results {
   padding: 3rem 0 2.5rem;
@@ -650,6 +777,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .lp-about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
   }
 }
 

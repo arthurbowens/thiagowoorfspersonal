@@ -26,6 +26,17 @@ interface Testimonial {
 export class App {
   protected readonly whatsappUrl = 'https://wa.me/5581989231234';
 
+  protected readonly competencies = [
+    'Anatomia Aplicada ao Treinamento',
+    'Fisiologia e Bioquímica do Exercício',
+    'Cinesiologia e Biomecânica',
+    'Avaliação Postural e Composição Corporal',
+    'Prescrição e Periodização do Treinamento',
+    'Treinamento para Grupos de Risco',
+    'Coach e Acompanhamento On-line',
+    'Empreendedorismo e Gestão na Área Fitness',
+  ];
+
   protected readonly benefits: Benefit[] = [
     {
       icon: 'target',
